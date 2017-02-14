@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<form action="form1">
+		<input type="radio" name="che">
+		<input type="radio" name="che">
+		<input type="radio" name="che">
+		<input type="radio" name="che">
+		<input type="radio" name="che">
+		<input type="radio" name="che">
+		<input type="radio" name="che">
+		<input type="radio" name="che">
+	</form>
+</body>
+<script>
+	function foo (){
+		var rads = document.querySelector("form");		
+			for (var i = 0;i<rads.length;i++){
+				rads[i].index = i+1;
+				rads[i].onclick = function(){
+				alert("这是第"+(this.index)+"个单选框");
+			};
+		}		
+	};
+	foo();	
+</script>
+</html>
