@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>本地存储</title>
+</head>
+
+<table>
+	<tr>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+
+</table>
+<body>
+	<script>
+	var oStorage = window.localStorage;
+	console.log(oStorage);
+	oStorage.name = "苏镇";
+	if(oStorage.name){
+		alert(oStorage.name)
+	}else{
+		alert("没有该属性名")
+	}
+	// localStorage.clear();
+	oStorage.ask = [
+		{
+			id:1,book:"H5应用技术",price:"12$"
+		}
+	]
+
+	console.log(oStorage.getItem(ask))
+	</script>
+</body>
+</html>
